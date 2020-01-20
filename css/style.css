@@ -308,6 +308,8 @@ template {
 [hidden] {
   display: none; }
 
+  /*My style*/
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -324,22 +326,14 @@ a {
   text-decoration: none;
   color: #000; }
 
-.right {
-  color: green; }
-
-.wrong {
-  color: red; }
-
-
 body {
   background-color: rgb(230, 223, 223);
   padding: 50px;
 }
-.grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .number {
@@ -348,14 +342,12 @@ body {
   text-align: center;
   background-color: rgb(204, 196, 196);
 }
-.enter {
+.enter__lists,
+.comp__lists {
+  flex-basis: 45%;
   text-align: center;
-  grid-column: span 2;
   border: 1px solid black;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   background-color: rgb(204, 196, 196);
-}
-.output{
-  margin: 0 20px;
 }
